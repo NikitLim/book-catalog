@@ -16,10 +16,12 @@ function addBook(books) {
                 ? `http://158.160.203.172:8080/image/${book.image}` 
                 : 'img/no-image.jpg';
         const bookCard = `
-        <div class="book-card">
-            <img src="${imageUrl}" alt="${book.name}">
-            <h2>${book.name}</h2>
-        </div>
+        <a href="book.html?id=${book.id}" class="book-link">
+            <div class="book-card">
+                <img src="${imageUrl}" alt="${book.name}">
+                <h2>${book.name}</h2>
+            </div>
+        </a>
         `
         bookList.innerHTML += bookCard;
     });

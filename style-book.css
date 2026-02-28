@@ -1,0 +1,13 @@
+.main-book{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image{
+    width: 350px;
+    min-height: 500px;
+    margin-right: 50px;
+    object-fit: cover;
+}
+
