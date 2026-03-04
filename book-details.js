@@ -34,9 +34,13 @@ async function fetchBookDetails() {
         }
 
         try {
-            const genreResponse = await axios.get(`http://158.160.203.172:8080/genre`);
-            console.log('Genre details:', genreResponse.data);
-            console.log('Genre response data:', genreResponse.data.books);
+            for(let i = 0; i < 10; i++) {
+                const genreResponse = await axios.get('http://158.160.203.172:8080/genre/', {
+                    params: { id: i}
+                });
+                console.log('Genre details:', genreResponse.data.books);
+
+            }
         }
         catch (genreError) {
             console.warn('Ошибка при получении жанра:', genreError);
