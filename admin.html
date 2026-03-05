@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-book.css">
+    <link rel="stylesheet" href="style-admin.css">
 </head>
 <body>
+    
     <header class="header">
         <div class="header__nav-book container">
             <div class="header__logo">
@@ -18,37 +19,22 @@
                 <a href="index.html" class="book-link">
                     <h3>Книжный центр</h3>
                 </a>
-                
             </div>
         
         <div class="nav">
             <a href="index.html" class="book-link">Главная</a>
-            <a href="admin.html" class="book-link">Панель администратора</a>
+            <p>Панель администратора</p>
         </div>
+        <h1 class="title">
+            Панель администратора
+        </h1>
     </header>
 
-    <main class="main-book">
-        <div>
-            <img src="" alt="" class="image">
-        </div>
-        <div>
-            <h2 class="name" id="name">
+    <main class="main-admin">
+        <h2 class="catalog-title container">Управление книгами</h2>
+        <div class="admin-books container" id="adminBooks">
 
-            </h2>
-            <p class="author" id="author">
-
-            </p>
-            <div class="genre" id="genre">
-
-            </div>
-            <p class="description" id="description">
-
-            </p>
         </div>
     </main>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
-    <script src="book-details.js"></script>
-
 </body>
 </html>
